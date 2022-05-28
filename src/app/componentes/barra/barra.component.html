@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container-fluid fs-4">
+      <a class="navbar-brand menu-title fs-4 text-warning mx-5" routerLink="inicio" [routerLinkActive]="'active'"> <i class="bi bi-tools"></i> avnMotors</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active menu-title" routerLink="/servicios" [routerLinkActive]="'active'"><i class="bi bi-wrench px-2"></i>Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active menu-title" routerLink="/agenda" [routerLinkActive]="'active'"><i class="bi bi-calendar2-check px-2"></i> Agenda tu cita</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active menu-title" routerLink="/productos" [routerLinkActive]="'active'"> <i class="bi bi-box-seam px-2"></i>Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active menu-title" routerLink="/contacto" [routerLinkActive]="'active'"> <i class="bi bi-mailbox px-2"></i>Contáctanos</a>
+          </li>
+        </ul>
+
+        <p class="text-warning text-center fs-5 mt-3 mx-5">Bienvenido: {{nombres}}</p>        
+        
+            <a class="text-warning text-decoration-none"><button class="btn btn-outline-white d-flex text-warning fs-4" type="submit" routerLink="/login">Login <i class="bi bi-box-arrow-in-left px-2"></i></button></a>
+            <a class="text-warning me-5 text-decoration-none"><button class="btn btn-outline-white d-flex text-warning fs-4" type="submit" (click)="cerrarSesion()">Salir <i class="bi bi-door-open px-2"></i></button></a>
+        
+            
+
+      </div>
+    </div>
+  </nav>
