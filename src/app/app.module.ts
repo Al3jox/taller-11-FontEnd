@@ -26,6 +26,11 @@ import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { CrearClienteComponent } from './componentes/login/crear-cliente/crear-cliente.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// Prime
+
+import {AccordionModule} from 'primeng/accordion';
+
+import {CalendarModule} from 'primeng/calendar';
 
 @NgModule({
   declarations: [
@@ -49,7 +54,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     NgxMaterialTimepickerModule,
     BrowserAnimationsModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    CalendarModule
 
   ],
   providers: [],
